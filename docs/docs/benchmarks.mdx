@@ -29,22 +29,20 @@ In practice, the main speed advantages come from a few places:
 - the seekable libvips source path lets libvips load and process common inputs more efficiently
 - libvips itself is highly optimized for resize, thumbnail, and transcode workloads
 
-## Current benchmark summary
+## Benchmark summary
 
-The current benchmark summary on this page is based on the committed x86_64 AWS rerun documented in the [benchmark results](https://github.com/cshum/image-servers-benchmark/tree/master/results).
+The benchmark summary on this page is based on the committed AWS EC2 `c7i.large` rerun documented in the [benchmark results](https://github.com/cshum/image-servers-benchmark/tree/master/results). On this benchmark set, imagor 1.9.1 is consistently faster than thumbor overall and competitive with imgproxy.
 
-This page highlights the x86_64 run on AWS EC2 `c7i.large`. On this benchmark set, imagor 1.9.1 is consistently faster than thumbor overall and competitive with imgproxy.
-
-Quick x86_64 comparison on AWS EC2 `c7i.large`:
+Quick comparison:
 
 <div className="benchmark-chart-grid">
   <div className="benchmark-chart-card">
 
-JPEG:
+**JPEG**
 
 ```mermaid
 xychart-beta
-  title "x86_64 JPEG throughput on c7i.large (req/s)"
+  title "JPEG throughput on c7i.large (req/s)"
   x-axis [imagor, imgproxy, thumbor]
   y-axis "req/s" 0 --> 90
   bar "JPEG" [74.35, 82.01, 59.45]
@@ -53,11 +51,11 @@ xychart-beta
   </div>
   <div className="benchmark-chart-card">
 
-PNG:
+**PNG**
 
 ```mermaid
 xychart-beta
-  title "x86_64 PNG throughput on c7i.large (req/s)"
+  title "PNG throughput on c7i.large (req/s)"
   x-axis [imagor, imgproxy, thumbor]
   y-axis "req/s" 0 --> 25
   bar "PNG" [18.56, 17.35, 10.23]
@@ -66,11 +64,11 @@ xychart-beta
   </div>
   <div className="benchmark-chart-card">
 
-WebP:
+**WebP**
 
 ```mermaid
 xychart-beta
-  title "x86_64 WebP throughput on c7i.large (req/s)"
+  title "WebP throughput on c7i.large (req/s)"
   x-axis [imagor, imgproxy, thumbor]
   y-axis "req/s" 0 --> 30
   bar "WebP" [21.23, 24.27, 15.80]
@@ -79,11 +77,11 @@ xychart-beta
   </div>
   <div className="benchmark-chart-card">
 
-AVIF:
+**AVIF**
 
 ```mermaid
 xychart-beta
-  title "x86_64 AVIF throughput on c7i.large (req/s)"
+  title "AVIF throughput on c7i.large (req/s)"
   x-axis [imagor, imgproxy, thumbor]
   y-axis "req/s" 0 --> 20
   bar "AVIF" [17.77, 17.15, 14.85]
@@ -92,10 +90,10 @@ xychart-beta
   </div>
 </div>
 
-- JPEG: imgproxy leads on x86_64 in this setup
-- PNG: imagor leads on x86_64
-- WebP: imgproxy leads on x86_64
-- AVIF: imagor is slightly ahead of imgproxy on x86_64 in this setup
+- JPEG: imgproxy leads in this setup
+- PNG: imagor leads
+- WebP: imgproxy leads in this setup
+- AVIF: imagor is slightly ahead of imgproxy in this setup
 
 Benchmark shape:
 
@@ -104,10 +102,10 @@ Benchmark shape:
 - resize to `512x512`
 - compared runtimes:
   - imagor: `ghcr.io/cshum/imagor:1.9.1`
-  - imgproxy: benchmark harness used `darthsim/imgproxy:latest`
+  - imgproxy: benchmark harness used `darthsim/imgproxy:latest`, corresponding to imgproxy `v4.0.3`
   - thumbor: local `benchmark-thumbor:latest`, resolved from `thumbor/Dockerfile` to `thumbor 7.7.7`
 
-Representative x86_64 throughput from the committed summaries:
+Representative throughput from the committed summaries:
 
 | Format | imagor | imgproxy | thumbor |
 | --- | ---: | ---: | ---: |
