@@ -198,7 +198,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} imagor.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Adrian C. Shum`,
     },
     prism: {
       theme: prismThemes.github,

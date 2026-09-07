@@ -9,6 +9,7 @@ keywords:
 
 # Commercial Support
 
+Adrian C. Shum is the author of [imagor](/), [imagorvideo](/imagorvideo) and [vipsgen](https://github.com/cshum/vipsgen).
 I help teams design, extend, and operate high-performance image processing systems with imagor, libvips, Go, and C.
 
 Areas of support include:
