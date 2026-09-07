@@ -84,8 +84,8 @@ const sidebars: SidebarsConfig = {
     },
     {
       type: "doc",
-      id: "commercial-support",
-      label: "Commercial Support",
+      id: "consulting",
+      label: "Consulting",
     },
   ],
 };

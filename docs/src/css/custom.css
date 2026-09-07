@@ -297,6 +297,11 @@ a:hover {
   text-decoration: underline;
 }
 
+.footer__copyright a,
+.footer__copyright a:hover {
+  color: #ffffff !important;
+}
+
 .benchmark-chart-grid {
   display: grid;
   gap: 1rem;

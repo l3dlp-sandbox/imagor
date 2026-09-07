@@ -124,10 +124,9 @@ const config: Config = {
           position: "right",
         },
         {
-          href: "https://github.com/sponsors/cshum",
-          label: "Sponsor",
+          label: "Consulting",
+          to: "/consulting",
           position: "right",
-          className: "navbar-buy-button",
         },
       ],
     },
@@ -184,16 +183,16 @@ const config: Config = {
               href: "https://github.com/cshum/imagor",
             },
             {
+              label: "Sponsor",
+              href: "https://github.com/sponsors/cshum",
+            },
+            {
               label: "Docker Hub",
               href: "https://hub.docker.com/r/shumc/imagor",
             },
             {
               label: "Benchmarks",
               to: "/benchmarks",
-            },
-            {
-              label: "Commercial Support",
-              to: "/commercial-support",
             },
           ],
         },
