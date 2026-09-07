@@ -22,7 +22,7 @@ Support is available for:
 - migration planning and rollout support
 - performance tuning and production hardening
 
-For bugs and feature requests, please continue to use GitHub Issues.
+For bugs and feature requests, please continue to use [GitHub Issues](https://github.com/cshum/imagor/issues).
 
 Commercial support is provided independently by Adrian C. Shum and is optional. imagor remains open source, with bugs and feature requests handled through GitHub Issues.
 
