@@ -190,6 +190,10 @@ const config: Config = {
               label: "Docker Hub",
               href: "https://hub.docker.com/r/shumc/imagor",
             },
+            {
+              label: "Consulting",
+              to: "/consulting",
+            },
           ],
         },
       ],
