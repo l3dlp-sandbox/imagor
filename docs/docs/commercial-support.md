@@ -7,12 +7,12 @@ keywords:
   - imagor custom integrations
 ---
 
-# Commercial Support
+# Commercial Support and Consulting
 
-Adrian C. Shum is the author of [imagor](/), [imagorvideo](/imagorvideo) and [vipsgen](https://github.com/cshum/vipsgen).
+[Adrian C. Shum](https://cshum.com/) is the author of [imagor](/), [imagorvideo](/imagorvideo) and [vipsgen](https://github.com/cshum/vipsgen).
 I help teams design, extend, and operate high-performance image processing systems with imagor, libvips, Go, and C.
 
-Areas of support include:
+Support is available for:
 
 - system architecture and deployment design
 - custom imagor components such as processors, loaders, or storage backends
@@ -21,6 +21,10 @@ Areas of support include:
 - migration planning and rollout support
 - performance tuning and production hardening
 
-For bugs and feature requests, please continue to use GitHub issues.
+For bugs and feature requests, please continue to use GitHub Issues.
 
-For consulting inquiries, contact [imagor@cshum.com](mailto:imagor@cshum.com).
+Commercial support is provided independently by Adrian C. Shum and is optional. imagor remains open source, with bugs and feature requests handled through GitHub Issues.
+
+## Contact
+
+For inquiries, contact [imagor@cshum.com](mailto:imagor@cshum.com).

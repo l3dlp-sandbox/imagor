@@ -198,7 +198,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Adrian C. Shum`,
+      copyright: `Copyright © ${new Date().getFullYear()} <a href="https://cshum.com">Adrian C. Shum</a>`,
     },
     prism: {
       theme: prismThemes.github,
