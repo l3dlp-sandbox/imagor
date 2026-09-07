@@ -1,6 +1,7 @@
 ---
 description: Commercial support and consulting for teams adopting or running imagor in production.
 slug: /consulting
+hide_table_of_contents: true
 keywords:
   - imagor consulting
   - imagor commercial support

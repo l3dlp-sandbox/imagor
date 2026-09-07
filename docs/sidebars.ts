@@ -82,11 +82,6 @@ const sidebars: SidebarsConfig = {
       id: "community",
       label: "Community",
     },
-    {
-      type: "doc",
-      id: "consulting",
-      label: "Consulting",
-    },
   ],
 };
 
